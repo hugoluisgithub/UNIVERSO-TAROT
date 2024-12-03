@@ -1,0 +1,202 @@
+body {
+ margin: 0;
+ padding: 0;
+width: 100%;
+height: 100%;
+}
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+header{
+    width: 100%;
+    height: 10px;
+    font-size: x-large;
+    margin: 0%;
+    padding-top: 1%;
+    padding-bottom: 8%;
+}
+.titulo {
+    margin-top: 0%;
+    font-family: "Pirata One", serif;
+    font-weight: 30;
+    font-style: normal; 
+    font-size: 115%;
+    color:  white;
+    text-align: center;
+}
+.contenedor {
+    margin: 1%;
+    padding: 1%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.main {
+    max-width: 50%;
+    max-height: 100%;
+    height: 100vh;
+    padding: 1%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    background: linear-gradient(rgb(142, 36, 241),#b68de5 );
+    float: left;
+    box-sizing: border-box;
+    font-family: cursive;
+    border-radius: 10%;
+    border-color: rgb(9, 22, 90);
+}
+aside {
+    max-width: 38%;
+    max-height: 100%;
+    height: 100vh; 
+    padding: 5%;
+    margin-right: 5%;
+    background: linear-gradient(rgb(142, 36, 241),#b68de5 );
+    float: right;
+    box-sizing: border-box;
+    margin-bottom: 0%;
+    font-family: cursive;
+    text-align: center;
+    border-radius: 10%;
+    border-color: rgb(9, 22, 90);
+}
+#num {
+    text-align: center;
+    font-size:large;
+}
+.parrafos {
+    text-align: center;
+}
+#buhoCuatro { 
+    align-self: center;
+    max-width: 80%;
+    border-radius: 50%;
+    border-width: 50%;
+    }  
+footer {
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height:auto;
+    padding: 10px;
+    font-family: cursive;
+    color: rgb(245, 241, 9);
+    font-size:larger;
+}
+footer .contact {
+    width: 80%px;
+    height:40px;
+    align-self: center;
+    text-align: center;
+    background-color:#fff;
+    color: rgb(61, 4, 116);
+    border-radius: 40px;
+    font-size:x-large;
+    font-weight: bold;
+    margin-left: 35%;  
+}
+.mov { animation-name: slide;
+       animation-duration: 5s;
+       animation-timing-function:ease-in-out;
+       animation-iteration-count: infinite;
+   }
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(500px); }
+        100% { transform: translateX(0); }   
+}
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+    .Titulo {
+        text-align:left;
+        padding-left: 30px;
+    }
+    header {
+        width: 100%;
+        font-size:x-large;
+        padding-top: 10px;
+        text-align: left;
+        padding-left: 4px;
+    }
+    aside {
+    width: 100%;
+    }
+    footer {
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+.gatoCuatro {
+    width:100%;
+    max-width: 45%;
+    border-radius: 20%;
+    position:fixed left;
+    z-index: -10;
+    object-fit: fill;
+    display: inline-block; 
+}
+.card-deck {
+    text-align: right;
+    max-width: 8%;
+    padding-right: 60%;
+    padding-left: 45%;
+    
+    height: 12vh; 
+}
+.card-deck {
+    position: relative;
+    max-width: 40%;
+   display: inline-block;
+}
+.card-deck img {
+    position: absolute;
+    width: 60px;
+    height: 95px;
+    transition: 0.5s;
+    transform-origin: bottom center;
+    cursor: pointer;
+}
+.card-selected {
+    z-index: 20;
+    transform: scale(2.5) translateY(-50%) !important;
+}
+.card-deck img:nth-child(1)  { transform: rotate(-40deg); }
+.card-deck img:nth-child(2)  { transform: rotate(-20deg); }
+.card-deck img:nth-child(3)  { transform: rotate(0deg); }
+.card-deck img:nth-child(4)  { transform: rotate(20deg); }
+.card-deck img:nth-child(5)  { transform: rotate(40deg); }
+.foto {
+    bottom: 15px;
+    max-width: 90px;
+    border-radius: 50px;
+}
+.mov { animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(100px); }
+        100% { transform: translateX(0); }   
+}
+.contact:hover {
+    background-color: rgb(245, 241, 9);
+    color: red;
+}
+.foto {
+    align-self: center;
+}   
+#tema {
+    width: 15p;
+    justify-content: right;
+}

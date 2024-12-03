@@ -1,0 +1,216 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+.contenedor {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 3000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header{
+    top: 10px;
+    width: 100%;
+    font-family: cursive;
+    font-size: xx-large;
+    height: 15vh;
+    text-align: center;
+    color: #fff;
+}
+.main {
+    border-style: solid;
+    border-color: rgb(9, 22, 90);
+    width: 49%;
+    height: 70vh;
+    padding: 0px;
+    margin: 5px;
+    float: left;
+    box-sizing: border-box;
+    font-family: cursive;
+    border-radius: 10px;
+    background-image: url(../img/fotoRegistro3.jpg);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+aside {
+    border-radius:20px;
+    border-style: solid;
+    border-color: rgb(9, 22, 90);
+    background-color: rgb(199, 199, 199);
+    width: 49%;
+    height: 70vh;
+    padding: 0px;
+    margin: 3px;
+    box-sizing: border-box;
+    float: left;
+    font-family: cursive;
+    text-align: center;
+}
+footer {
+    max-width: 100%;
+    max-height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: rgb(37, 1, 71);
+    text-align: center;
+}
+.titulo {
+    font-family: "Pirata One", serif;
+    font-weight: 30;
+    font-style: normal; 
+    font-size: 115%;
+    color:  white;
+    text-align: center;
+}
+#info {
+    text-align: left;
+    font-family:cursive;
+    font-size:larger;
+    font-style: italic;
+}
+h4 {
+    font-size:100%;
+    font-family: cursive;
+    color: #fff;
+    text-align: center;
+}
+.contact {
+    background-color: rgb(245, 147, 41);
+    max-width: 10%;
+    height: 30px;
+    border-radius: 20%;
+    padding-top:  8px;
+    font-size:x-small small;
+    font-weight: 700px;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+    .Titulo {
+        text-align:left;
+        padding-left: 30px;
+    }
+    header {
+        width: 100%;
+        font-size:x-large;
+        padding-top: 10px;
+        text-align: left;
+        padding-left: 4px;
+    }
+    aside {
+    width: 100%;
+    }
+    footer {
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+    }
+    
+    .email {
+        margin-left: 25px;
+    }
+}
+.whatsapp {
+    background-color: rgb(42, 158, 42);
+    position:static;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.registro {
+    min-width: 100%;
+    min-height: auto;
+    color: rgba(15, 4, 54, 0.839);
+    background-color: rgb(199, 199, 199);
+    border-radius:20px;
+}   
+.registro-header {
+    max-width: 100%;
+    min-height: 100%;
+    background: rgba(128, 128, 128, 0.938);
+    padding: 20px 40px;
+    font-size:x-large;
+    text-align: center;
+    color: rgba(15, 4, 54, 0.839);
+    border-bottom: 5px solid #fff;
+    border-radius:20px;
+}
+#firstname {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 35%;
+    max-height: auto;
+    margin: 3px;
+    font-size: 90%;
+ }
+ #lastname {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 35%;
+    max-height: auto;
+    margin: 3px;
+    font-size: 90%;
+ }
+ #email {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 35%;
+    max-height: auto;
+    margin: 3px;
+    font-size: 90%;
+ }
+ #birthdate {
+    border-radius: 10px;
+    max-width: 35%;
+    max-height: auto;
+    margin: 3px;
+    font-size: 90%;
+ }
+.contact:hover {
+    color: red;
+}
+/*color imagen a sepia*/
+.banner:hover {filter: sepia(80%);}
+/*movimiento botón whatsapp*/
+.whatsapp:hover {-webkit-transform: rotate(90deg); transform: rotate(90deg);}
+.form-control {
+    font-size:xx-large;
+    margin: 0px;   
+}   
+#info {
+    font-size: large;
+}
+.seguir {
+    font-family: cursive;
+    font-size:small;
+    font-weight: 700;
+    color: rgba(15, 4, 54, 0.839);
+    text-align: left;
+    padding-right: 40px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.enviar {
+    background-color: rgb(243, 98, 98);
+    color: white;
+    border-radius: 30%;
+}
+.enviar:hover {
+    color: rgb(245, 147, 41);
+    }
+

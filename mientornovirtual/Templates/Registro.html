@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../static/CSS/styleReg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/mientornovirtual/Templates/crud-universo.html">
+    <title>Universo Tarot</title>
+<!-- Incluimos la biblioteca de Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <video src="../static/img/videos/universoVideo.mp4"  autoplay ="true"
+    muted="true" loop="true"
+    poster= src="../static/img/videos/universoVideo.mp4"></video>
+    <div class="contenedor">    
+        <header>             
+            <h1 class="titulo">Universo Tarot</h1>             
+            <p id="info">Las energías que me llegan, te informan . . .</p>
+        </header>
+        <section class="main"></section>
+        <aside>  
+            <section class="registro">
+                 <div class ="registro-header">
+                     <h1 class="form-control">Registra tus Datos</h1>
+                 </div>
+                <form action="/add_prospecto" method="POST" id="formulario" class="form"> 
+                     <div class="form-box"> 
+                         <label><strong>Nombre</strong>
+                         <input type="text" id="firstname" name="nombre" required placeholder="su nombre"></label><br>
+                     </div>
+                      <div class="form-box"> 
+                         <label><strong>Apellido</strong></label>
+                         <input type="text" id="lastname" name="apellido" required placeholder="su apellido"><br>
+                     </div>
+                     <div class="form-box">  
+                         <label><strong>Email</strong></label>
+                         <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com"><br>
+                     </div>
+                     <div class="form-box">            
+                         <label><strong>F. Nac.</strong></label>
+                         <input type="date" id="birthdate" name="fecha_nac" required placeholder="dd-mm-yyyy" 
+                         value="" min="1940-01-01" max="2024-11-30">
+                     </div>
+                     <button type="submit" class="enviar">Enviar</button>
+                </form>
+                     <hr>
+                    <div class="form-box">
+                     <!--Whatsapp icon-->
+                     <h1 class="form-control">Conectame por WhatsApp</h1>     
+                     <button class="whatsapp" input type="submit">   
+                         <a href="https://wa.me/5493329616051">  
+                         <img src=../static/img/whatsappicon.png></a>
+                     </button>
+                    </div>
+                    <div class="seguir">
+                        <span>Puedes seguirme en: </span>
+                        <a href="https://www.facebook.com/gracielalperroud?mibextid=ZbWKwL" target="_blank"><img src="../static/img/facebook.png"></a>
+                        <a href="https://www.instagram.com/universotarot934?igsh=aWR3dG15bzAwb2lu" target="_blank"><img src="../static/img/instagram.png"></a>
+                    </div>
+                <br>
+            </section>
+        </aside>
+    </div>
+        <footer>
+            <div><a href="../index.html">
+                <button class="contact"><strong>Volver</strong></button></a></div>  
+        </footer>
+      <script src="../static/validReg.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../static/js/index.js"></script>
+      <script src="../static/js/crud-prospectos-fetch.js"></script> 
+</body>
+</html>

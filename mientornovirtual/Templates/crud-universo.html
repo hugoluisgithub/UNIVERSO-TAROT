@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mientornovirtual/Templates/Registro.html/form">
+    <title>CRUD</title>
+  </head>
+    <h3 class="subtitle">Listado de prospectos</h3>
+    <table id="list-table-prospectos" class="table">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Email</td>
+            <td>Fecha_Nac</td>
+            <td>Operaciones</td>
+            </tr>
+    </thead>
+    <tbody>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <form action="/update/{{prospecto.0}}" method="POST"  
+            <input type="text" id="firstname" name="nombre" required placeholder="su nombre" value="{{prospecto.1}}">
+            <input type="text" id="lastname" name="apellido" required placeholder="su apellido" value="{{prospecto.2}}">   
+            <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com" value="{{prospecto.3}}">
+            <input type="date" id="birthdate" name="fecha_nac" required placeholder="dd-mm-yyyy" 
+            value="{{{prospecto.4}}}" min="1940-01-01" max="2024-11-30">
+            <button type="submit" class="enviar">Enviar</button>  
+        </form>
+    
+        {% for prospecto in prospectos %}
+        <tr>
+            <td>{{prospecto.1}}</td>
+            <td>{{prospecto.2}}</td>
+            <td>{{prospecto.3}}</td>
+            td>{{prospecto.4}}</td>
+            <td>
+                <a href="/edit/{{prospecto.0}}">Editar</a>
+                <a href="/delete/{{prospecto.0}}">Borrar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    
+    </table>
+    </tbody>
+</html>

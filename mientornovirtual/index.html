@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="static/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Rye&display=swap" rel="stylesheet">
+    <script src="./static/controlAudio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Rye&display=swap" rel="stylesheet">
+    <title>Universo Tarot</title>
+</head>
+<body onclick="PlayAudio()" >
+    <video src="./static/img/videos/universoVideo.mp4"  autoplay ="true"
+        muted="true" loop="true"
+        poster= src="./static/img/videos/universoVideo.mp4"></video>
+    <div class="contenedor">
+        <header>             
+            <h1 class="titulo">UNIVERSO    TAROT</h1>           
+        </header>
+        <section class="main">
+            <div class="parrafos">
+                <h1>Las energías del Universo se manifiestan en tu vida</h1>
+                <h1>Encuentra <strong>aquí</strong> las respuestas que estás buscando</h1>
+            </div>
+            <div class="alinear">
+                <img class="gatoCuatro" src="static/img/gato 4.jpg" alt="Gato sobre mantel lila con cartas">
+                <div class="card-deck">
+                    <img id=cartaSiete src="static/img/carta7.jpg" alt="Carta la Emperatriz">
+                    <img id=cartaNueve src="static/img/carta9.jpg" alt="Carta el Hermitaño">
+                    <img id=cartaDos src="static/img/carta2.jpg" alt="Carta el Mago">
+                    <img id=cartaTres src="static/img/carta3.jpg" alt="Carta los Enamorados">
+                    <img id=cartaCuatro src="static/img/carta4.jpg" alt="Carta Gran Sacerdotisa">
+                </div>
+            </div>   
+        </section>
+        <aside>   
+            <h1 id="num">NUMEROLOGÍA</h1>
+            <hr><p><strong>¿Qué revelan los números sobre tu persona?</strong></p>
+            <hr> <p><strong>Con tu fecha de nacimiento puedes conocer tu camino de vida, tus dones y tu destino</strong></p>    
+            <img id="buhoCuatro" src="static/img/buho-4.jpg" alt="Búho con números volando">    
+        </aside>
+        <footer>
+            <div class="mov"><span id="gra">Comunicate con Graciela: </span>
+            <span><img class="foto" src="static/img/gra-pagina.jpg"></div></span>     
+            <a href="Templates/registro.html">
+            <div><button class="contact">Contacto</button></a></div>
+        </footer>
+    </div>
+<audio id="musica1" loop>
+    <source src="./static/music/clockwork-chaos-dark-trailer-intro-202223.mp3" type="audio/mpeg">
+</audio>
+<script>
+    function PlayAudio() {
+        document.getElementById("musica1").play();
+    }
+</script>
+<script src="./static/cartas.Mov.js"></script>
+</body>
+</html>
+
+
+
